@@ -1,5 +1,5 @@
 <h2>Want to add your favorite quote?</h2>
-<form #quoteForm='ngForm' (ngSubmit)='submitForm()'>
+<form #quoteForm='ngForm' (ngSubmit)='submitForm()' class = "form">
   <div id="quoteInputDiv" class="form-group">
     <label class="label" for="authorInput">Write your quote here!</label>
     <textarea type="text" name="quote" id="quoteInput" rows="4" class="form-control" [(ngModel)]='newQuote.quote'
