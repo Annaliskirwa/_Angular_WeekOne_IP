@@ -1,0 +1,19 @@
+<div class="row">
+  <div class="col-md-4">
+    <p>Author: {{quote.author}}</p>
+  </div>
+  <div class="col-md-4">
+    <p>Day posted: {{quote.creationDate|date}}</p>
+  </div>
+  <div class="col-md-4">
+      <p>Days passed: {{quote.creationDate|datePassed}}</p>
+    </div>
+</div>
+
+<div id="buttonsDiv">
+  <button id="upvoteBtn" class="btn btn-outline-primary" (click)="quoteUpvote()"><fa-icon [icon]="faThumbsUp"></fa-icon>  {{quote.upvote}}</button>
+  <button id="downvoteBtn" class="btn btn-outline-primary" (click)="quoteDownvote()"><fa-icon [icon]="faThumbsDown"></fa-icon>  {{quote.downvote}}</button>
+  <button class="btn btn-outline-danger" (click)="quoteDelete()">Delete</button>
+  <button id="hideBtn" class="btn btn-outline-primary" (click)="detailsHide()">Hide</button>
+</div>
+

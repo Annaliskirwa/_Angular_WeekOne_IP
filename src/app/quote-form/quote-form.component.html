@@ -1,0 +1,34 @@
+<h2>Want to add your favorite quote?</h2>
+<form #quoteForm='ngForm' (ngSubmit)='submitForm()'>
+  <div id="quoteInputDiv" class="form-group">
+    <label class="label" for="authorInput">Write your quote here!</label>
+    <textarea type="text" name="quote" id="quoteInput" rows="4" class="form-control" [(ngModel)]='newQuote.quote'
+      #quote='ngModel' placeholder="Speak your mind over here..." minlength="4" required></textarea>
+    <!-- Error Handling -->
+    <div *ngIf="quote.invalid && (quote.dirty || quote.touched)" class="alert alert-danger">
+      <div *ngIf="quote.errors.required">Input is required</div>
+      <div *ngIf="quote.errors.minlength">The minimum length for a quote is 4 characters</div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-6">
+      <div class="form-group">
+        <label class="label" for="authorInput">Author</label>
+        <input type="text" id="authorInput" class="form-control" [(ngModel)]='newQuote.author' name="author"
+          #author='ngModel' placeholder="Who is the author of the quote?" minlength="4" required>
+        <div id="authorErrorDiv" *ngIf="author.invalid && (author.dirty || author.touched)" class="alert alert-danger">
+          <div *ngIf="author.errors.required">Input is required</div>
+          <div *ngIf="author.errors.minlength">Minimum name length is 4 characters</div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <label class="label" for="date">Date</label>
+      <input type="date" id="dateInput" class="form-control" [(ngModel)]='newQuote.creationDate' name="creationDate"
+        #creationDate='ngModel' required>
+    </div>
+  </div>
+
+  <button type="submit" class="btn btn-outline-light">Add quote to the list</button>
+</form>

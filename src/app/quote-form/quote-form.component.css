@@ -1,0 +1,53 @@
+h2 {
+    text-align: center;
+    text-decoration: underline;
+    margin-bottom: 15px;
+    color: crimson;
+}
+
+.col-md-6 label{
+    display: block;
+    text-align: center;
+}
+#quoteInputDiv{
+    display: block;
+    text-align: center;
+}
+
+.alert {
+    background-color: #8B2635;
+    color: #E0E2DB;
+    font-weight: 700px;
+    font-family: 'Antic', sans-serif;
+    
+}
+
+#quoteInputDiv textarea, #quoteInputDiv .alert {
+    width: 97%;
+    margin: auto;
+}
+
+#authorInput, #dateInput, .col-md-6 .alert {
+    width: 80%;
+    margin: auto;
+}
+
+.form-control:focus {
+    box-shadow: none;
+    border: 1px solid #406E8E;
+}
+
+button {
+    display: block;
+    margin: 10px auto;
+    border: 2px solid crimson;
+    background-color: #ffffff;
+    color: #312F2F;
+    border-radius: 20px;
+}
+
+button:hover {
+    border: 2px solid #FCDFB3;
+    background-color: #FCDFB3;
+    color: crimson; 
+}

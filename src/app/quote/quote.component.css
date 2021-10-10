@@ -1,0 +1,129 @@
+.container-fluid {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+div {
+  font-family: 'Lusitana', serif;
+}
+
+.jumbotron {
+  margin: 0px;
+  background-image: url('~src/assets/img/wallpaper1.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: 85%;
+  border-radius: 0px;
+}
+
+.jumbotron h1 {
+  margin: 0px;
+  text-align: center;
+  font-family: 'Dancing Script', cursive;
+  font-weight: bold;
+  font-size: 80px;
+  color: crimson;
+
+}
+.jumbotron h3 {
+  margin: 0px;
+  text-align: center;
+  font-weight: 300;
+  font-size: 30px;
+  color: azure;
+
+}
+
+
+#specialQuote {
+  margin: 0px;
+  padding: 2em;
+  text-align: center;
+  background-color: #add8e6;
+  color: azure;
+}
+
+#specialQuote h2 {
+  text-decoration: underline;
+  color: crimson;
+}
+
+#specialQuote h4,
+p {
+  font-family: 'Dancing Script', cursive;
+  color: azure;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+#formDiv {
+  margin: 0px;
+  padding: 2em;
+  background-color: #e0f2f9;
+}
+
+#detailsDiv {
+  margin: 0px auto 0px auto;
+  padding: 2em;
+  background-color: #FCDFB3;
+  background-image: url('~src/assets/img/water-color.jpg');
+}
+
+#detailsDiv h2 {
+  text-align: center;
+  text-decoration: underline;
+  margin-bottom: 20px;
+  color: crimson;
+}
+
+#detailsDiv .card {
+  margin: 0px auto 20px auto;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #b8e2f3;
+  text-align: center;
+}
+#detailsDiv .row{
+  background-color: rgba(0, 0, 0, 0.2);
+  padding-top: 10px;
+  border-radius: 5px;
+}
+
+.card-title,
+.card-body {
+  margin: 0px;
+}
+
+#showDetails {
+  display: block;
+  margin: 0px auto;
+  border-radius: 20px;
+}
+button {
+  display: block;
+  margin: 10px auto;
+  border: 2px solid crimson;
+  background-color: #ffffff;
+  color: #312F2F;
+  border-radius: 20px;
+}
+
+button:hover {
+  border: 2px solid #FCDFB3;
+  background-color: #FCDFB3;
+  color: crimson; 
+}
+
+.footer {
+  margin: 0px;
+  padding: 1em;
+  text-align: center;
+  background-color: #e0f2f9;
+}
+
+.footer h6 {
+margin: 0px;
+}
+.footer span{
+  color: crimson;
+}

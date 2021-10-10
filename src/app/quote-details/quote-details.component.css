@@ -1,0 +1,13 @@
+.row .col-md-6 {
+    text-align: center;
+}
+
+#buttonsDiv button {
+    display: inline-block;
+    border-radius: 20px;
+    margin-left: 10px;
+}
+
+#upvoteBtn, #downvoteBtn {
+    border: 0px;
+}

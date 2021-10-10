@@ -1,0 +1,35 @@
+<div class="container-fluid">
+  <div class="jumbotron">
+    <h1 id="jumboText">UpDownVoteQuotes</h1>
+    <h3>Add a quote, upvote or downvote it.</h3>
+  </div>
+  <div id="formDiv">
+    <quote-form (quoteAdd)="addQuote($event)"></quote-form>
+  </div>
+  <div id="detailsDiv">
+    <h2>Quotes by you :)</h2>
+    <div class="row">
+      <div class="col-md-6" *ngFor='let quote of quotes; let i = index'>
+        <div class="card">
+            <h4 id="mainQuote" class="card-title" *ngIf='quote.id == highestVotedQuote.qID; else noHighlight ' appHighlight>{{quote.quote}}</h4>
+            <ng-template #noHighlight>
+                <h4 id="mainQuote" class="card-title">{{quote.quote}}</h4>
+            </ng-template>
+          <div class="card-body">
+              <button id="showDetails" class="btn btn-outline-primary" (click)="showDetails(i)" *ngIf='quote.showDetailsBtn'>Details</button>
+              <quote-details *ngIf='quote.showDetails' [quote]='quote' (upVote)='upvoteQuote(i)' (downVote)='downvoteQuote(i)'
+        (quoteDel)='deleteQuote(i)' (hide)='hideDetails(i)'></quote-details>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+<div id="specialQuote">
+  <h2> Most loved quote </h2>
+  <h4>"{{highestVotedQuote.quote}}"</h4>
+  <p>- {{highestVotedQuote.author}}</p>
+</div>
+<div class="footer">
+  <h6>Brought to you by: Annalis Kirwa</h6>
+  <h6>Nice time <span>'quoting'</span></h6>
+</div>
