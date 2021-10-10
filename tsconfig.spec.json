@@ -1,10 +1,18 @@
+<<<<<<< HEAD
+=======
+/* To learn more about this file see: https://angular.io/config/tsconfig. */
+>>>>>>> de49a5721d9680f23f18bd6922675182e5ecd868
 {
   "extends": "./tsconfig.json",
   "compilerOptions": {
     "outDir": "./out-tsc/spec",
     "types": [
+<<<<<<< HEAD
       "jasmine",
       "node"
+=======
+      "jasmine"
+>>>>>>> de49a5721d9680f23f18bd6922675182e5ecd868
     ]
   },
   "files": [
