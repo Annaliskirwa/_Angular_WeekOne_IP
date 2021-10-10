@@ -24,7 +24,7 @@ export class QuoteComponent implements OnInit {
     voteCount: 0,
     qID: 0,
     quote: "This is where the most voted quote will appear",
-    author: "Developer"
+    author: "Annalis"
   }
 
   //Button Click Functions
