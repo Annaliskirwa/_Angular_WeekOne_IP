@@ -17,7 +17,8 @@ export class QuoteComponent implements OnInit {
     new Quote(1," Some birds aren’t meant to be caged. Their feathers are just too bright and when they fly away, the part of you that knows it was a sin to lock them up does rejoice, but still, the place you live in is that much more drab and empty now that they’re gone.","Ellis Redding",new Date(1994,8,11),0,0,0),
     new Quote(2,"Scout: Atticus, he was real nice.Atticus: Most people are, Scout, when you finally see them","Atticus",new Date(1960,7,11),0,0,0),
     new Quote(3,"Some infinities are bigger than other infinities","John Green",new Date(2015,4,20),0,0,0),
-    new Quote(4,"I can hear your heart,on the radio beat.They're playing 'Chasing Cars'and I thought of us","Ed Sheeran",new Date(2019,8,19),0,0,0)
+    new Quote(4,"I can hear your heart,on the radio beat.They're playing 'Chasing Cars'and I thought of us","Ed Sheeran",new Date(2019,8,19),0,0,0),
+    new Quote(5,"May the force be with you","Star Wars",new Date(1997,8,20),0,0,0),
   ];
 
   highestVotedQuote = {

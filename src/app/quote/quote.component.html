@@ -9,7 +9,7 @@
   <div id="detailsDiv">
     <h2>Quotes by you :)</h2>
     <div class="row">
-      <div class="col-md-6" *ngFor='let quote of quotes; let i = index'>
+      <div class="col-md-4" *ngFor='let quote of quotes; let i = index'>
         <div class="card">
             <h4 id="mainQuote" class="card-title" *ngIf='quote.id == highestVotedQuote.qID; else noHighlight ' appHighlight>{{quote.quote}}</h4>
             <ng-template #noHighlight>
@@ -33,3 +33,4 @@
   <h6>Brought to you by: Annalis Kirwa</h6>
   <h6>Nice time <span>'quoting'</span></h6>
 </div>
+
